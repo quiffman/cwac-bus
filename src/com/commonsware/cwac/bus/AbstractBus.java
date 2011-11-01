@@ -26,7 +26,7 @@ abstract public class AbstractBus<M,F,S extends AbstractBus.Strategy> {
 	private CopyOnWriteArrayList<Registration> regs=
 										new CopyOnWriteArrayList<Registration>();
 	
-	void setStrategy(S strategy) {
+	public void setStrategy(S strategy) {
 		this.strategy=strategy;
 	}
 	
